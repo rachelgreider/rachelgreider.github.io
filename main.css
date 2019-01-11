@@ -21,7 +21,58 @@ h1 {
     margin-left:80px;
     margin-top: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    filter: none;
+    opacity: 100;
+    -webkit-transition: opacity 1s ease out;
+    -moz-transition: opacity 1s ease out;
+    -ms-transition: opacity 1s ease out;
+    -o-transition: opacity 1s ease out;
+    transition: opacity 1s ease out;
+
 }
+h1:hover{
+    filter: alpha (opacity=50);
+    opacity: .5;
+}
+
+
+.nav1 {
+    position: fixed;
+    margin-left:1075px;
+    margin-top: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    filter: none;
+    opacity: 100;
+    -webkit-transition: opacity 1s ease out;
+    -moz-transition: opacity 1s ease out;
+    -ms-transition: opacity 1s ease out;
+    -o-transition: opacity 1s ease out;
+    transition: opacity 1s ease out;
+}
+.nav1:hover{
+    filter: alpha (opacity=50);
+    opacity: .5;
+}
+
+
+.nav2 {
+    position: fixed;
+    margin-left:1150px;
+    margin-top: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    filter: none;
+    opacity: 100;
+    -webkit-transition: opacity 1s ease out;
+    -moz-transition: opacity 1s ease out;
+    -ms-transition: opacity 1s ease out;
+    -o-transition: opacity 1s ease out;
+    transition: opacity 1s ease out;
+}
+.nav2:hover{
+    filter: alpha (opacity=50);
+    opacity: .5;
+}
+
 
 .container {
     display:flex;
