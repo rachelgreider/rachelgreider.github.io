@@ -41,3 +41,19 @@ img {
 .column {
     width: 35em;
 }
+
+.design {
+    filter: none;
+    opacity: 100;
+    -webkit-transition: opacity 1s ease out;
+    -moz-transition: opacity 1s ease out;
+    -ms-transition: opacity 1s ease out;
+    -o-transition: opacity 1s ease out;
+    transition: opacity 1s ease out;
+
+}
+
+.design:hover{
+    filter: alpha (opacity=50);
+    opacity: .5;
+}
