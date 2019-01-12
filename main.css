@@ -86,6 +86,10 @@ h1:hover{
     opacity: .5;
 }
 
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+     
+}
 
 .container {
     display:flex;
@@ -93,6 +97,7 @@ h1:hover{
     margin-left: 9px;
     margin-top:100px;
 }
+
 
 img {
     width: 96%;
@@ -120,4 +125,24 @@ img {
 .design:hover{
     filter: alpha (opacity=50);
     opacity: .5;
+}
+
+.progress {
+    width: 90%;
+    height: auto;
+   
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+#container {
+    display:flex;
+    width: 80%;
+    margin-left: 150px;
+    margin-top:100px;
+}
+
+video {
+    margin-top: 100px;
+    
 }
