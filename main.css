@@ -15,7 +15,18 @@ html, body {
     outline: 1px solid #D3D3D3;
 }
 
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+a:hover {
+    color: black;
+}
+
 h1 {
+    
     position: fixed;
     margin-left:80px;
     margin-top: 30px;
@@ -32,10 +43,12 @@ h1 {
 h1:hover{
     filter: alpha (opacity=50);
     opacity: .5;
+    
 }
 
 
 .nav1 {
+    
     position: fixed;
     margin-left:1075px;
     margin-top: 40px;
@@ -55,6 +68,7 @@ h1:hover{
 
 
 .nav2 {
+    
     position: fixed;
     margin-left:1150px;
     margin-top: 40px;
@@ -84,7 +98,7 @@ img {
     width: 96%;
     height: auto;
     outline: 1px solid #D3D3D3;
-    flex-grow: <1>;
+    flex-grow: 1;
     margin-top: 11px;
 }
 
