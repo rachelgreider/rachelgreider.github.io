@@ -1,13 +1,19 @@
-html, body {
+html {
+    position: relative;
+    min-height: 100%;
     margin: 0;
     max-width: 100%;
     overflow-x: hidden;
-    
-   }
+}
 
+body {
+    margin: 0 0 150px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .header {
-    background-color: /*rgb(214, 214, 214)*/ white;
+    background-color:  white;
     height: 100px;
     position: fixed;
     width: 1300px;
@@ -152,12 +158,13 @@ video {
 }
 
 .footer {
-    background-color: /*rgb(214, 214, 214)*/ white;
+    background-color: white;
     height: 100px;
-    position: fixed;
+    position: absolute;
     width: 1300px;
     opacity: .75;
     outline: 1px solid #D3D3D3;
+    bottom: 0;
  }
 
  .copyright {
