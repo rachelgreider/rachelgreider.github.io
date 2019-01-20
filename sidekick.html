@@ -8,8 +8,72 @@
         <title>Rachel Greider</title>
     </head>
     <body>
-            <div class="header"> </div>
-            <h1><a href="home.html">Rachel Greider</a></h1>
-            <h3 class="nav1"><a href="index.html">Design</a></h3>
-            <h3 class="nav2"><a href="about.html">About</a></h3>
-    </body>
+            
+      <div class="container" id="container">
+                <div class="column">
+                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/3_fan.jpg"/></div>
+                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/left.jpg"/></div>
+                    <div class="progress"> <p> In collaboration with Kyle Page, the SugarCreek videographer.</p></div>
+                    
+                </div>
+        
+                <div class="column">
+                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/4_egg.jpg"/></div>
+                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/1_sandwich.jpg"/></div>
+                    <div class="progress"><p> My first time professionally photographing food. I learned about lighting and how to make food look good.</p></div>
+        
+                </div>
+                
+                <div class="column">
+                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/2_pile.jpg"/></div>
+                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/right.jpg"/></div>
+                    <div class="progress"> <p> These photos were used for the SugarCreek website, the tradebooth, and client information.</p></div>
+                        
+                </div> 
+                    
+                        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                      
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+                      
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        
+        <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }</script>
+        
+                       
+                        
+                
+                    </div>
+                    <div class="footer">
+                                <p class="copyright">&copy;2019 Rachel Greider </p>
+                        </div> 
+                
+                
+                    </body>
