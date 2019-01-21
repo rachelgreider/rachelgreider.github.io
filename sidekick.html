@@ -4,76 +4,97 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
 
         <title>Rachel Greider</title>
     </head>
     <body>
-            
-      <div class="container" id="container">
-                <div class="column">
-                    <div class="progress"><img id="myImg1" src="Images/booth_backdrop/3_fan.jpg"/></div>
-                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/left.jpg"/></div>
-                    <div class="progress"> <p> In collaboration with Kyle Page, the SugarCreek videographer.</p></div>
-                    
-                </div>
-        
-                <div class="column">
-                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/4_egg.jpg"/></div>
-                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/1_sandwich.jpg"/></div>
-                    <div class="progress"><p> My first time professionally photographing food. I learned about lighting and how to make food look good.</p></div>
-        
-                </div>
-                
-                <div class="column">
-                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/2_pile.jpg"/></div>
-                    <div class="progress"><img id="myImg" src="Images/booth_backdrop/right.jpg"/></div>
-                    <div class="progress"> <p> These photos were used for the SugarCreek website, the tradebooth, and client information.</p></div>
+            <div class="header"> </div>
+            <h1><a href="index.html">Rachel Greider</h1>
+            <h3 class="nav1"><a href="grid.html">Design</h3>
+            <h3 class="nav2"><a href="about.html">About</h3>     
+      
+                <div class="container text-center">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#ModalCarousel">
+                          Click here to launch modal carousel
+                        </button>
                         
-                </div> 
-                    
+                        <!-- Modal -->
+                        <div class="modal fade" id="ModalCarousel" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
                         
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-        
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
-                      
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
-                      
-                <!-- Modal Caption (Image Text) -->
-                <div id="caption"></div>
-            </div>
-        
-        <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg1');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          captionText.innerHTML = this.alt;
-        }
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-          modal.style.display = "none";
-        }</script>
-        
+                        <!--The main div for carousel-->
+                        <div id="carousel-modal-demo" class="carousel slide" data-ride="carousel" data-interval="2000">
+                         <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-modal-demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-modal-demo" data-slide-to="1"></li>
+                            <li data-target="#carousel-modal-demo" data-slide-to="2"></li>
+                            <li data-target="#carousel-modal-demo" data-slide-to="3"></li>
+                          </ol>
+                          
+                          <!-- Sliding images statring here --> 
+                           <div class="carousel-inner"> 
+                            <div class="item active"> 
+                              <img src="Images/magazine/1_contents.jpg" alt="contents"> 
+                              <div class="carousel-caption">
+                               <h3>Contents Page</h3>
+                               <p>Arawana</p>
+                              </div>
+                            </div> 
+
+                            <div class="item"> 
+                              <img src="Images/magazine/2_heros.jpg" alt="heros"> 
+                              <div class="carousel-caption">
+                               <h3>Heros</h3>
+                               <p>Animal Heros of the Month</p>
+                              </div>      
+                           </div> 
+
+                            <div class="item"> 
+                              <img src="Images/magazine/3_ornamental.jpg" alt="Ornamental Fisheries"> 
+                              <div class="carousel-caption">
+                               <h3>Ornamental Fisheries</h3>
+                               <p>Main Page</p>
+                              </div>          
+                            </div>
+
+                            <div class="item"> 
+                              <img src="images/strawberries.jpg" alt="strawberries">
+                              <div class="carousel-caption">
+                               <h3>The strawberries</h3>
+                               <p>Text here</p>
+                              </div>           
+                            </div> 
+                             
+                          </div> 
+                          
+                          <!-- Next / Previous controls here -->
+                          <a class="left carousel-control" href="#carousel-modal-demo" data-slide="prev">
+                            <span class="icon-prev"></span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel-modal-demo" data-slide="next">
+                            <span class="icon-next"></span>
+                          </a>
+                          
+                        </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                                <script src="//code.jquery.com/jquery.js"></script>
+                                <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
                        
                         
                 
-                    </div>
-                    <div class="footer">
-                                <p class="copyright">&copy;2019 Rachel Greider </p>
-                        </div> 
+            
+             <div class="footer">
+                    <p class="copyright">&copy;2019 Rachel Greider </p>
+            </div> 
                 
                 
                     </body>

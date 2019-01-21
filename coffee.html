@@ -17,27 +17,27 @@
       <div class="container" id="container">
         <div class="column">
             <div class="progress"><img id="myImg1" src="Images/booth_backdrop/3_fan.jpg"/></div>
-            <div class="progress"><img id="myImg" src="Images/booth_backdrop/left.jpg"/></div>
-            <div class="progress"> <p> In collaboration with Kyle Page, the SugarCreek videographer.</p></div>
+            <div class="progress"><img id="myImg2" src="Images/booth_backdrop/left.jpg"/></div>
+            <div class="progress"><p> In collaboration with Kyle Page, the SugarCreek videographer.</p></div>
             
         </div>
 
         <div class="column">
-            <div class="progress"><img id="myImg" src="Images/booth_backdrop/4_egg.jpg"/></div>
-            <div class="progress"><img id="myImg" src="Images/booth_backdrop/1_sandwich.jpg"/></div>
+            <div class="progress"><img id="myImg3" src="Images/booth_backdrop/4_egg.jpg"/></div>
+            <div class="progress"><img id="myImg4" src="Images/booth_backdrop/1_sandwich.jpg"/></div>
             <div class="progress"><p> My first time professionally photographing food. I learned about lighting and how to make food look good.</p></div>
 
         </div>
         
         <div class="column">
-            <div class="progress"><img id="myImg" src="Images/booth_backdrop/2_pile.jpg"/></div>
-            <div class="progress"><img id="myImg" src="Images/booth_backdrop/right.jpg"/></div>
-            <div class="progress"> <p> These photos were used for the SugarCreek website, the tradebooth, and client information.</p></div>
+            <div class="progress"><img id="myImg5" src="Images/booth_backdrop/2_pile.jpg"/></div>
+            <div class="progress"><img id="myImg6" src="Images/booth_backdrop/right.jpg"/></div>
+            <div class="progress"><p> These photos were used for the SugarCreek website, the tradebooth, and client information.</p></div>
                 
         </div> 
             
                 
-<!-- The Modal -->
+<!-- 3_fan modal-->
 <div id="myModal" class="modal">
 
         <!-- The Close Button -->
@@ -46,8 +46,8 @@
         <!-- Modal Content (The Image) -->
         <img class="modal-content" id="img01">
               
-        <!-- Modal Caption (Image Text) -->
-        <div id="caption"></div>
+        
+
     </div>
 
 <script>
@@ -55,27 +55,23 @@
 var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg1');
+var img1 = document.getElementById('myImg1');
 var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
+
+img1.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
   return false;
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var closebutton = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
+closebutton.onclick = function() { 
   modal.style.display = "none";
   return false;
-}</script>
-
-               
-                
+}</script>  
         
             </div>
             <div class="footer">

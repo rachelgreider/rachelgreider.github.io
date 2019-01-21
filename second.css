@@ -1,0 +1,19 @@
+#header { 
+    background-color: white;
+    opacity: .75;
+    border-bottom: 1px solid #D3D3D3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    text-decoration: none;
+    
+}
+
+.navbar a {
+    color: black;
+    
+}
+
+.navbar-brand:hover{
+    filter: alpha (opacity=50);
+    opacity: .5;
+    
+}
