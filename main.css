@@ -18,7 +18,8 @@ body {
     position: fixed;
     width: 1300px;
     opacity: .75;
-    outline: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    z-index: 5;
 }
 
 a {
@@ -32,7 +33,7 @@ a:hover {
 }
 
 h1 {
-    
+    z-index: 6;
     position: fixed;
     margin-left:80px;
     margin-top: 30px;
@@ -54,7 +55,7 @@ h1:hover{
 
 
 .nav1 {
-    
+    z-index: 6;
     position: fixed;
     margin-left:1075px;
     margin-top: 40px;
@@ -74,7 +75,7 @@ h1:hover{
 
 
 .nav2 {
-    
+    z-index: 6;
     position: fixed;
     margin-left:1150px;
     margin-top: 40px;
@@ -117,9 +118,16 @@ img {
     width: 35em;
 }
 
+
+
+
+
 .design {
     filter: none;
     opacity: 100;
+    flex-grow: 1;
+    transition: .3s;
+
     -webkit-transition: opacity 1s ease out;
     -moz-transition: opacity 1s ease out;
     -ms-transition: opacity 1s ease out;
@@ -131,6 +139,16 @@ img {
 .design:hover{
     filter: alpha (opacity=50);
     opacity: .5;
+    transform: scale(1.02);
+}
+
+.gridimages{
+    flex-grow: 1;
+    transition: .3s;
+}
+
+.gridimages:hover{
+    transform: scale(1.02);
 }
 
 .progress {
@@ -161,7 +179,7 @@ img {
     margin-top:100px;
 }
 
-video {
+.demo {
     margin-top: 100px;
     
 }
@@ -186,12 +204,27 @@ video {
     width: fit-content;
 }
 
-.carouselelement {
+.carouselelement {     
       width:600px;
-
+      
       height: auto;
 }
 
+.video{
+    width:1100px;
+    height: auto;
+    margin-left:80px;
+    z-index: 7;
+    margin-top: 100px;
+}
+
+.videotext {
+    margin-left:80px;
+    width: 550px;
+    margin-top: -50px;
+    line-height: 1.6;
+    border-right: 1px solid #D3D3D3;
+}
 
 
   
@@ -199,7 +232,7 @@ video {
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 10; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
