@@ -28,7 +28,7 @@
 
         <div class="column">
             <div class="progress"><img id="myImg3" onclick="openModal('myModal', 'myImg3')" src="Images/booth_backdrop/4_egg.jpg" /></div>
-            <div class="progress"><img id="myImg4" onclick="openModal('myModal', 'myImg4')"  src="Images/booth_backdrop/1_sandwich.jpg" /></div>
+            <div class="progress"><img id="myImg4" onclick="openModal('myModal', 'myImg4')" src="Images/booth_backdrop/1_sandwich.jpg" /></div>
             <div class="progress">
                 <p> My first time professionally photographing food. I learned about lighting and how to make food look
                     good.</p>
@@ -37,8 +37,8 @@
         </div>
 
         <div class="column">
-            <div class="progress"><img id="myImg5" onclick="openModal('myModal', 'myImg5')"  src="Images/booth_backdrop/2_pile.jpg" /></div>
-            <div class="progress"><img id="myImg6" onclick="openModal('myModal', 'myImg6')"  src="Images/booth_backdrop/right.jpg" /></div>
+            <div class="progress"><img id="myImg5" onclick="openModal('myModal', 'myImg5')" src="Images/booth_backdrop/2_pile.jpg" /></div>
+            <div class="progress"><img id="myImg6" onclick="openModal('myModal', 'myImg6')" src="Images/booth_backdrop/right.jpg" /></div>
             <div class="progress">
                 <p> These photos were used for the SugarCreek website, the tradebooth, and client information.</p>
             </div>
@@ -76,18 +76,35 @@
 
                 modal.style.display = "block";
                 modalImg.src = img.src;
-            
 
 
-            // Get the <span> element that closes the modal
-            var closebutton = document.getElementsByClassName("close")[0];
 
-            // When the user clicks on <span> (x), close the modal
-            closebutton.onclick = function () {
-                modal.style.display = "none";
-                return false;
+                // Get the <span> element that closes the modal
+                var closebutton = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                closebutton.onclick = function () {
+                    modal.style.display = "none";
+                    return false;
+                }
             }
-        }</script>
+
+            // add all image ID's to carousel array
+            var carouselParent = document.getElementById("carousel1");
+            var carouselElementArray = document.getElementsByClassName("carouselElement");
+
+            // create number of divs equal to length of array
+            // append to parent carousel container
+            // assign carousel styling classes
+            for (var i = 0; i < carouselContainer.length; i++) {
+                var carouselElement = document.createElement('div');
+                carouselElement.className = 'carouselElement';
+                carouselParent.appendChild(carouselElement);
+            }
+
+
+        // carouselButtonLeft.onclick translate 600px
+        </script>
 
     </div>
     <div class="footer">
@@ -96,4 +113,5 @@
 
 
 </body>
+
 </html>
