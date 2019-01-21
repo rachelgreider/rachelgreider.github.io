@@ -177,6 +177,9 @@ img {
     line-height: 1.6;  
 }
 
+.about{
+    width: 100%;
+}
 
 #container {
     display:flex;
