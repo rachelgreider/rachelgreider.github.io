@@ -94,7 +94,7 @@ h1:hover{
 }
 
 p{
-    font-family: 'Montserrat', sans-serif;     
+    font-family: 'Montserrat', sans-serif;       
 }
 
 .container {
@@ -208,15 +208,39 @@ img {
     margin-top: 30px;
  }
 
+.carouselCover {
+    width:75vw;
+    height: 800px;
+    overflow: hidden;
+}
+
 #carousel1 {
     display: flex;
     width: fit-content;
 }
 
 .carouselelement {     
-      width:600px;
-      
+      width:100vw;
       height: auto;
+}
+
+.slideButton {
+    position: absolute;
+    top: -50vh;
+    height: 100vh;
+    width: 10vw;
+
+    z-index: 3;
+
+    background-color: black;
+}
+
+.incrimentLeft {
+    margin-left: 0;
+}
+
+.incrimentRight {
+    margin-left: 50vw;
 }
 
 .video{
