@@ -203,8 +203,10 @@ video {
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: auto;
+    
+    max-height: 500px;
+    
   }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
