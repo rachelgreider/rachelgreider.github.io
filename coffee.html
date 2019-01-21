@@ -1,82 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="main.css">
 
-        <title>Rachel Greider</title>
-    </head>
-    <body>
-                <div class="header"> </div>
-                <h1><a href="index.html">Rachel Greider</h1>
-                <h3 class="nav1"><a href="grid.html">Design</h3>
-                <h3 class="nav2"><a href="about.html">About</h3>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
 
+    <title>Rachel Greider</title>
+</head>
 
-      <div class="container" id="container">
-        <div class="column">
-            <div class="progress"><img id="myImg1" src="Images/booth_backdrop/3_fan.jpg"/></div>
-            <div class="progress"><img id="myImg2" src="Images/booth_backdrop/left.jpg"/></div>
-            <div class="progress"><p> In collaboration with Kyle Page, the SugarCreek videographer.</p></div>
-            
-        </div>
-
-        <div class="column">
-            <div class="progress"><img id="myImg3" src="Images/booth_backdrop/4_egg.jpg"/></div>
-            <div class="progress"><img id="myImg4" src="Images/booth_backdrop/1_sandwich.jpg"/></div>
-            <div class="progress"><p> My first time professionally photographing food. I learned about lighting and how to make food look good.</p></div>
-
-        </div>
-        
-        <div class="column">
-            <div class="progress"><img id="myImg5" src="Images/booth_backdrop/2_pile.jpg"/></div>
-            <div class="progress"><img id="myImg6" src="Images/booth_backdrop/right.jpg"/></div>
-            <div class="progress"><p> These photos were used for the SugarCreek website, the tradebooth, and client information.</p></div>
-                
-        </div> 
-            
-                
-<!-- 3_fan modal-->
-<div id="myModal" class="modal">
-
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
-              
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img01">
-              
-        
-
+<body>
+    <div class="header">
+        <h1><a href="index.html">Rachel Greider</a></h1>
+        <h3 class="nav1"><a href="grid.html">Design</a></h3>
+        <h3 class="nav2"><a href="about.html">About</a></h3>
     </div>
 
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img1 = document.getElementById('myImg1');
-var modalImg = document.getElementById("img01");
-
-img1.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  return false;
-}
-
-// Get the <span> element that closes the modal
-var closebutton = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-closebutton.onclick = function() { 
-  modal.style.display = "none";
-  return false;
-}</script>  
-        
+    <div class="container" id="container">
+        <div class="column">
+            <div class="progress"><img id="myImg1" onclick="openModal('myModal', 'myImg1')" src="Images/booth_backdrop/3_fan.jpg" /></div>
+            <div class="progress"><img id="myImg2" onclick="openModal('myModal', 'myImg2')" src="Images/booth_backdrop/left.jpg" /></div>
+            <div class="progress">
+                <p> In collaboration with Kyle Page, the SugarCreek videographer.</p>
             </div>
-            <div class="footer">
-                        <p class="copyright">&copy;2019 Rachel Greider </p>
-                </div> 
-        
-        
-            </body>
+
+        </div>
+
+        <div class="column">
+            <div class="progress"><img id="myImg3" onclick="openModal('myModal', 'myImg3')" src="Images/booth_backdrop/4_egg.jpg" /></div>
+            <div class="progress"><img id="myImg4" src="Images/booth_backdrop/1_sandwich.jpg" /></div>
+            <div class="progress">
+                <p> My first time professionally photographing food. I learned about lighting and how to make food look
+                    good.</p>
+            </div>
+
+        </div>
+
+        <div class="column">
+            <div class="progress"><img id="myImg5" src="Images/booth_backdrop/2_pile.jpg" /></div>
+            <div class="progress"><img id="myImg6" src="Images/booth_backdrop/right.jpg" /></div>
+            <div class="progress">
+                <p> These photos were used for the SugarCreek website, the tradebooth, and client information.</p>
+            </div>
+
+        </div>
+
+
+        <!-- 3_fan modal-->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+            <img class="modal-content" id="img02">
+
+
+
+        </div>
+
+        <script>
+            // Get the modal
+            // function runs when called by onclick html tag attached to all images
+            function openModal(modalID, imgID) {
+                console.log('opening');
+                console.log(`openModal(${modalID},${imgID})`);
+                //read in modal
+                var modal = document.getElementById(modalID);
+
+                // Get the image and insert it inside the modal
+                var img = document.getElementById(imgID);
+                var modalImg = document.getElementById("img02");
+
+
+                modal.style.display = "block";
+                modalImg.src = img.src;
+            
+
+
+            // Get the <span> element that closes the modal
+            var closebutton = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            closebutton.onclick = function () {
+                modal.style.display = "none";
+                return false;
+            }
+        }</script>
+
+    </div>
+    <div class="footer">
+        <p class="copyright">&copy;2019 Rachel Greider </p>
+    </div>
+
+
+</body>
+</html>
