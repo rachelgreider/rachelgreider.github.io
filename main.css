@@ -37,7 +37,7 @@ h1 {
     position: fixed;
     margin-left:80px;
     margin-top: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     filter: none;
     opacity: 100;
     -webkit-transition: opacity 1s ease out;
@@ -59,7 +59,7 @@ h1:hover{
     position: fixed;
     margin-left:1075px;
     margin-top: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-family: 'Montserrat', sans-serif;    
     filter: none;
     opacity: 100;
     -webkit-transition: opacity 1s ease out;
@@ -79,7 +79,7 @@ h1:hover{
     position: fixed;
     margin-left:1150px;
     margin-top: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-family: 'Montserrat', sans-serif;    
     filter: none;
     opacity: 100;
     -webkit-transition: opacity 1s ease out;
@@ -94,8 +94,7 @@ h1:hover{
 }
 
 p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-     
+    font-family: 'Montserrat', sans-serif;     
 }
 
 .container {
@@ -172,6 +171,13 @@ img {
 
 .progress img:hover {opacity: 0.7;}
 
+.progresstext {
+    width: 92%;
+    height: auto;
+    line-height: 1.6;  
+}
+
+
 #container {
     display:flex;
     width: 80%;
@@ -220,12 +226,18 @@ img {
 
 .videotext {
     margin-left:80px;
-    width: 550px;
+    width: 500px;
     margin-top: -50px;
     line-height: 1.6;
     border-right: 1px solid #D3D3D3;
 }
-
+.videotext2 {
+    margin-left:80px;
+    width: 500px;
+    margin-top: -50px;
+    line-height: 1.6;
+    
+}
 
   
   /* The Modal (background) */
