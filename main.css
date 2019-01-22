@@ -209,37 +209,46 @@ img {
  }
 
 .carouselCover {
+    position: absolute;
     width:75vw;
-    height: 800px;
+    height: 65vh;
+    left: 12.5vw;
+
     overflow: hidden;
 }
 
 #carousel1 {
+    position: absolute;
+    left: 0;
+
     display: flex;
     width: fit-content;
 }
 
-.carouselelement {     
-      width:100vw;
+.carouselElement {     
+      width:75vw;
       height: auto;
 }
 
+.carouselButtonContainer {
+    display: flex;
+}
+
 .slideButton {
-    position: absolute;
-    top: -50vh;
+    position: relative;
     height: 100vh;
     width: 10vw;
 
     z-index: 3;
 
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.incrimentLeft {
+.incrementLeft {
     margin-left: 0;
 }
 
-.incrimentRight {
+.incrementRight {
     margin-left: 50vw;
 }
 
@@ -275,8 +284,8 @@ img {
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */

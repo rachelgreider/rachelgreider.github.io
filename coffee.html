@@ -20,8 +20,8 @@
 
     <div class="container" id="container">
         <div class="column">
-            <div class="progress"><img id="myImg1" onclick="openModal('myModal', 'myImg1')" src="Images/booth_backdrop/3_fan.jpg" /></div>
-            <div class="progress"><img id="myImg2" onclick="openModal('myModal', 'myImg2')" src="Images/booth_backdrop/left.jpg" /></div>
+            <div class="progress inCarousel"><img id="myImg1" onclick="openModal('myModal', 'myImg1', 1)" src="Images/booth_backdrop/3_fan.jpg" /></div>
+            <div class="progress inCarousel"><img id="myImg2" onclick="openModal('myModal', 'myImg2', 2)" src="Images/booth_backdrop/left.jpg" /></div>
             <div class="progresstext">
                 <p> In collaboration with Kyle Page, the SugarCreek videographer.</p>
             </div>
@@ -29,8 +29,8 @@
         </div>
 
         <div class="column">
-            <div class="progress"><img id="myImg3" onclick="openModal('myModal', 'myImg3')" src="Images/booth_backdrop/4_egg.jpg" /></div>
-            <div class="progress"><img id="myImg4" onclick="openModal('myModal', 'myImg4')" src="Images/booth_backdrop/1_sandwich.jpg" /></div>
+            <div class="progress inCarousel"><img id="myImg3" onclick="openModal('myModal', 'myImg3', 3)" src="Images/booth_backdrop/4_egg.jpg" /></div>
+            <div class="progress inCarousel"><img id="myImg4" onclick="openModal('myModal', 'myImg4', 4)" src="Images/booth_backdrop/1_sandwich.jpg" /></div>
             <div class="progresstext">
                 <p> My first time professionally photographing food. I learned about lighting and how to make food look
                     good.</p>
@@ -39,32 +39,44 @@
         </div>
 
         <div class="column">
-            <div class="progress"><img id="myImg5" onclick="openModal('myModal', 'myImg5')" src="Images/booth_backdrop/2_pile.jpg" /></div>
-            <div class="progress"><img id="myImg6" onclick="openModal('myModal', 'myImg6')" src="Images/booth_backdrop/right.jpg" /></div>
+            <div class="progress inCarousel"><img id="myImg5" onclick="openModal('myModal', 'myImg5', 5)" src="Images/booth_backdrop/2_pile.jpg" /></div>
+            <div class="progress inCarousel"><img id="myImg6" onclick="openModal('myModal', 'myImg6', 6)" src="Images/booth_backdrop/right.jpg" /></div>
             <div class="progresstext">
                 <p> These photos were used for the SugarCreek website, the tradebooth, and client information.</p>
             </div>
 
         </div>
+    </div>
 
 
-        <!-- 3_fan modal-->
-        <div id="myModal" class="modal">
+    <!-- 3_fan modal-->
+    <div id="myModal" class="modal">
 
-            <!-- The Close Button -->
-            <span class="close">&times;</span>
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
 
-            <!-- Modal Content (The Image) -->
-            <img class="modal-content" id="img01">
-            <img class="modal-content" id="img02">
+        <!-- Modal Content (The Image) -->
+        <!--    <img class="modal-content" id="img01">  -->
+
+            <!--                          -->
+            <!--      CAROUSEL HTML       -->
+            <!--                          -->
+            <div class="carouselCover">
+                <div id="carousel1" class="carousel">
+                </div>
+                <div class="carouselButtonContainer">
+                    <div class="slideButton incrementLeft" onclick="incrementCarousel('carousel1', 0)"></div>
+                    <div class="slideButton incrementRight" onclick="incrementCarousel('carousel1', 1)"></div>
+                </div>
+            </div>
 
 
-
-        </div>
-
-        
 
     </div>
+
+
+
+
     <div class="footer">
         <p class="copyright">&copy;2019 Rachel Greider </p>
     </div>

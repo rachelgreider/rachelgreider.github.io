@@ -58,16 +58,18 @@
                         </div>
                       </div>--->
   <div class="carouselCover">
-    <div id="carousel1">
-      <div class="carouselelement"><img src="Images/booth_backdrop/3_fan.jpg"> </div>
-      <div class="carouselelement"><img src="Images/booth_backdrop/4_egg.jpg"> </div>
-      <div class="carouselelement"><img src="Images/booth_backdrop/2_pile.jpg"> </div>
-      <div class="carouselelement"><img src="Images/booth_backdrop/left.jpg"> </div>
-      <div class="carouselelement"><img src="Images/booth_backdrop/1_sandwich.jpg"> </div>
-      <div class="carouselelement"><img src="Images/booth_backdrop/right.jpg"> </div>
+    <div id="carousel1" class="carousel">
+      <div class="carouselElement inCarousel"><img src="Images/booth_backdrop/3_fan.jpg"> </div>
+      <div class="carouselElement inCarousel"><img src="Images/booth_backdrop/4_egg.jpg"> </div>
+      <div class="carouselElement inCarousel"><img src="Images/booth_backdrop/2_pile.jpg"> </div>
+      <div class="carouselElement inCarousel"><img src="Images/booth_backdrop/left.jpg"> </div>
+      <div class="carouselElement inCarousel"><img src="Images/booth_backdrop/1_sandwich.jpg"> </div>
+      <div class="carouselElement inCarousel"><img src="Images/booth_backdrop/right.jpg"> </div>
     </div>
-    <div class="slideButton incrimentLeft"></div>
-    <div class="slideButton incrimentRight"></div>
+    <div class="carouselButtonContainer">
+      <div class="slideButton incrementLeft" onclick="incrementCarousel('carousel1', 0)"></div>
+      <div class="slideButton incrementRight" onclick="incrementCarousel('carousel1', 1)"></div>
+    </div>
   </div>
 
 
