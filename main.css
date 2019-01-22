@@ -67,6 +67,7 @@ h1:hover{
     -ms-transition: opacity 1s ease out;
     -o-transition: opacity 1s ease out;
     transition: opacity 1s ease out;
+    
 }
 .nav1:hover{
     filter: alpha (opacity=50);
@@ -87,6 +88,8 @@ h1:hover{
     -ms-transition: opacity 1s ease out;
     -o-transition: opacity 1s ease out;
     transition: opacity 1s ease out;
+    border-left: 1px solid rgb(211, 211, 211);
+    padding-left: 10px;
 }
 .nav2:hover{
     filter: alpha (opacity=50);
@@ -258,6 +261,7 @@ img {
     margin-left:80px;
     z-index: 7;
     margin-top: 100px;
+    border: 1px solid #D3D3D3;
 }
 
 .videotext {
