@@ -1,61 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="second.css">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    
-   <nav class="navbar sticky-top navbar-light bg-light">
-	<div class="container" id="header">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><h1>Rachel Greider</h1></a>
-		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a class="navbar-brand" href="#">Design</a></li>
-				
-				<li><a class="navbar-brand" href="#">About</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
 
-<div class="container">
-                <div class="row">
-                        <div class="col-md-4">
-                                <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
-                                <h3>Cloud Computable</h3>
-                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                        </div>
-                        <div class="col-md-4">
-                                <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
-                                <h3>Backwards Compatible</h3>
-                                <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
-                        </div>
-                        <div class="col-md-4">
-                                <span class="glyphicon glyphicon-console" aria-hidden="true"></span>
-                                <h3>GUI Free</h3>
-                                <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                        </div>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="script.js"></script>
+
+    <title>Rachel Greider</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1><a href="index.html">Rachel Greider</a></h1>
+        <h3 class="nav1"><a href="grid.html">Design</a></h3>
+        <h3 class="nav2"><a href="about.html">About</a></h3>
+    </div>
+
+    <h3 class="title">The Mouse and the Moon</h3>
+    <p class="projecttitle"> A story that my mom used to tell my brother and I. I decided to illustrate it as a gift to her. </p>
+
+
+    <div class="container" id="container">
+        <div class="column">
+            <div class="progress inCarousel"><img id="myImg1" onclick="openModal('myModal', 'myImg1', 1)" src="Images/mouse_moon/2_watercolor.jpg" /></div>
+            
+            <div class="progresstext">
+                <p> Watercolor final images.</p>
+            </div>
+
         </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+        <div class="column">
+            <div class="progress inCarousel"><img id="myImg3" onclick="openModal('myModal', 'myImg3', 3)" src="Images/mouse_moon/3_sketches.jpg" /></div>
+            
+            <div class="progresstext">
+                <p> Initial sketches to figure out the character and his expressions.</p>
+            </div>
+
+        </div>
+
+        <div class="column">
+            <div class="progress inCarousel"><img id="myImg5" onclick="openModal('myModal', 'myImg5', 5)" src="Images/mouse_moon/4_typefaces.jpg" /></div>
+           
+            <div class="progresstext">
+                <p> Title font explorations</p>
+            </div>
+        </div>       
+    </div>
+
+    <div class="lotus progress inCarousel "><img id="myImg2" onclick="openModal('myModal', 'myImg2', 2)" src="Images/mouse_moon/1_covermouse.jpg" /></div>
+
+
+    <!-- 3_fan modal-->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <!--    <img class="modal-content" id="img01">  -->
+
+            <!--                          -->
+            <!--      CAROUSEL HTML       -->
+            <!--                          -->
+            <div class="carouselCover">
+                <div id="carousel1" class="carousel">
+                </div>
+                <div class="carouselButtonContainer">
+                    <div class="slideButton incrementLeft"  onclick="incrementCarousel('carousel1', 0)"></div>
+                    <div class="slideButton incrementRight"  onclick="incrementCarousel('carousel1', 1)"></div>
+                </div>
+            </div>
+
+
+
+
+    </div>
+
+
+
+
+    <div class="footer">
+        <p class="copyright">&copy; 2019 Rachel Greider </p>
+    </div>
+
+
+</body>
+
 </html>
+   
