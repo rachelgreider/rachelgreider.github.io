@@ -12,15 +12,7 @@ body {
     overflow-x: hidden;
 }
 
-.header {
-    background-color:  white;
-    height: 100px;
-    position: fixed;
-    width: 1300px;
-    opacity: .75;
-    border-bottom: 1px solid #D3D3D3;
-    z-index: 5;
-}
+
 
 a {
     text-decoration: none;
@@ -32,98 +24,35 @@ a:hover {
     color: black;
 }
 
-h1 {
-    z-index: 6;
-    position: fixed;
-    margin-left:80px;
-    margin-top: 30px;
-    font-family: 'Montserrat', sans-serif;
-    filter: none;
-    opacity: 100;
-    -webkit-transition: opacity 1s ease out;
-    -moz-transition: opacity 1s ease out;
-    -ms-transition: opacity 1s ease out;
-    -o-transition: opacity 1s ease out;
-    transition: opacity 1s ease out;
-
-}
-h1:hover{
-    filter: alpha (opacity=50);
-    opacity: .5;
-    
-}
 
 
-.nav1 {
-    z-index: 6;
-    position: fixed;
-    margin-left:1075px;
-    margin-top: 40px;
-    font-family: 'Montserrat', sans-serif;    
-    filter: none;
-    opacity: 100;
-    -webkit-transition: opacity 1s ease out;
-    -moz-transition: opacity 1s ease out;
-    -ms-transition: opacity 1s ease out;
-    -o-transition: opacity 1s ease out;
-    transition: opacity 1s ease out;
-    
-}
-.nav1:hover{
-    filter: alpha (opacity=50);
-    opacity: .5;
-}
-
-
-.nav2 {
-    z-index: 6;
-    position: fixed;
-    margin-left:1150px;
-    margin-top: 40px;
-    font-family: 'Montserrat', sans-serif;    
-    filter: none;
-    opacity: 100;
-    -webkit-transition: opacity 1s ease out;
-    -moz-transition: opacity 1s ease out;
-    -ms-transition: opacity 1s ease out;
-    -o-transition: opacity 1s ease out;
-    transition: opacity 1s ease out;
-    border-left: 1px solid rgb(211, 211, 211);
-    padding-left: 10px;
-}
-.nav2:hover{
-    filter: alpha (opacity=50);
-    opacity: .5;
-}
 
 p{
     font-family: 'Montserrat', sans-serif;       
 }
 
 .title {  
-    margin-left:150px;
+    margin-left:5vw;
     margin-top: 130px;
+    padding-bottom:10px;
     font-family: 'Montserrat', sans-serif;   
 }
 
 .projecttitle {
-    margin-left: 150px;
+    margin-left: 5vw;
     line-height:1.6;
     font-family: 'Montserrat', sans-serif;
-    width: 75vw;
+    width: 60vw;
     margin-bottom: -100px;
 }   
 
-.lotus{
-    margin-left: 90px;
-    
-}
+
 
 
 .container {
     display:flex;
     width: 100%;
-    margin-left: 9px;
+    margin-left: 5vw;
     margin-top:100px;
 }
 
@@ -219,12 +148,19 @@ img {
     background-color: white;
     height: 100px;
     position: absolute;
-    width: 1300px;
+    width: 100vw;
     opacity: .75;
     outline: 1px solid #D3D3D3;
     bottom: 0;
  }
 
+
+
+
+
+
+ 
+ 
 .copyright {
     margin-left:80px;
     margin-top: 30px;
@@ -275,46 +211,6 @@ img {
     
 }
 
-
-
-
-#chevron {
-    position: relative;
-    text-align: center;
-    padding: 12px;
-    margin-bottom: 6px;
-    height: 60px;
-    width: 200px;
-  }
-  #chevron:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 51%;
-    background: red;
-    transform: skew(0deg, 6deg);
-  }
-  #chevron:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    background: red;
-    transform: skew(0deg, -6deg);
-  }
-
-
-
-
-
-
-
-
-
 .video{
     width:1100px;
     height: auto;
@@ -338,6 +234,14 @@ img {
     line-height: 1.6;
     
 }
+
+
+
+
+
+
+
+
 
   
   /* The Modal (background) */
@@ -414,3 +318,207 @@ img {
   }
 
   
+
+
+
+
+
+
+
+
+
+
+  .main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-nav li {
+    text-align: left;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:18px;
+}
+
+.active {
+    display: block;
+}
+
+#chkToggle {
+    display: none;
+}
+
+#chkToggle:checked + ul.main-nav {
+    display: block;
+}
+
+@media screen and (min-width: 770px) {
+    .header {
+        background-color:  white;
+        height: 100px;
+        position: fixed;
+        width: 100vw;
+        opacity: .75;
+        border-bottom: 1px solid #D3D3D3;
+        z-index: 5;
+    }
+
+    h1 {
+        z-index: 6;
+        position: fixed;
+        margin-left:5vw;
+        margin-top: 30px;
+        font-family: 'Montserrat', sans-serif;
+        filter: none;
+        opacity: 100;
+        -webkit-transition: opacity 1s ease out;
+        -moz-transition: opacity 1s ease out;
+        -ms-transition: opacity 1s ease out;
+        -o-transition: opacity 1s ease out;
+        transition: opacity 1s ease out;
+    
+    }
+    h1:hover{
+        filter: alpha (opacity=50);
+        opacity: .5;
+        
+    }
+    
+    .headernav{
+        margin-left: 75vw;
+    
+    }
+    
+    .nav1 {
+        z-index: 6;
+        position: fixed;
+        
+        margin-top: 30px;
+        font-family: 'Montserrat', sans-serif;    
+        filter: none;
+        opacity: 100;
+        -webkit-transition: opacity 1s ease out;
+        -moz-transition: opacity 1s ease out;
+        -ms-transition: opacity 1s ease out;
+        -o-transition: opacity 1s ease out;
+        transition: opacity 1s ease out;
+        
+    }
+    .nav1:hover{
+        filter: alpha (opacity=50);
+        opacity: .5;
+    }
+    
+    
+    .nav2 {
+        z-index: 6;
+        position: fixed;
+        margin-left:80px;
+        margin-top: 30px;
+        font-family: 'Montserrat', sans-serif;    
+        filter: none;
+        opacity: 100;
+        -webkit-transition: opacity 1s ease out;
+        -moz-transition: opacity 1s ease out;
+        -ms-transition: opacity 1s ease out;
+        -o-transition: opacity 1s ease out;
+        transition: opacity 1s ease out;
+        border-left: 1px solid rgb(211, 211, 211);
+        padding-left: 10px;
+    }
+    .nav2:hover{
+        filter: alpha (opacity=50);
+        opacity: .5;
+    }
+    
+    .nav3 {
+        z-index: 6;
+        position: fixed;
+        margin-left:180px;
+        margin-top: 30px;
+        font-family: 'Montserrat', sans-serif;    
+        filter: none;
+        opacity: 100;
+        -webkit-transition: opacity 1s ease out;
+        -moz-transition: opacity 1s ease out;
+        -ms-transition: opacity 1s ease out;
+        -o-transition: opacity 1s ease out;
+        transition: opacity 1s ease out;
+        border-left: 1px solid rgb(211, 211, 211);
+        padding-left: 10px;
+    }
+    .nav3:hover{
+        filter: alpha (opacity=50);
+        opacity: .5;
+    }
+
+
+    .navbar {
+        display: flex; 
+    }
+
+    #chkToggle:checked + ul.main-nav {
+        display: flex;
+    }
+
+
+
+
+    * {
+        
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-nav {
+        display: flex;
+        
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    main-nav li {
+        
+    }
+
+    .nav-links {
+       
+    }
+
+    .logo {
+        
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: black;
+    }
+}
