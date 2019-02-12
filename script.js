@@ -1,44 +1,44 @@
-console.log('hello world');
+// console.log('hello world');
 
-// var currentIndex = 0;
-// var carousel;
-// var carouselWannabes;
-// window.onload = function () {
-//     addCarouselElements();
-// };
+// // var currentIndex = 0;
+// // var carousel;
+// // var carouselWannabes;
+// // window.onload = function () {
+// //     addCarouselElements();
+// // };
 
-// Get the modal
-// function runs when called by onclick html tag attached to all images
-function openModal(modalID, imgID, imgNum) {
-    console.log('opening');
-    console.log(`openModal(${modalID},${imgID}, ${imgNum})`);
-    //read in modal
-    var modal = document.getElementById(modalID);
+// // Get the modal
+// // function runs when called by onclick html tag attached to all images
+// function openModal(modalID, imgID, imgNum) {
+//     console.log('opening');
+//     console.log(`openModal(${modalID},${imgID}, ${imgNum})`);
+//     //read in modal
+//     var modal = document.getElementById(modalID);
 
-    // Get the image and insert it inside the modal
-    //var img = document.getElementById(imgID);
-    //var modalImg = document.getElementById("img01");
+//     // Get the image and insert it inside the modal
+//     //var img = document.getElementById(imgID);
+//     //var modalImg = document.getElementById("img01");
 
-    // use imgNum to set the current index of the carousel
-    //currentIndex = imgNum-1;
-    //flip to that index
-    //incrementCarousel(`carousel1`, 2);
+//     // use imgNum to set the current index of the carousel
+//     //currentIndex = imgNum-1;
+//     //flip to that index
+//     //incrementCarousel(`carousel1`, 2);
 
-    modal.style.display = "block";
-    //modalImg.src = img.src;
-    modalImg.src = getElementById(`${imgID}`);
+//     modal.style.display = "block";
+//     //modalImg.src = img.src;
+//     modalImg.src = getElementById(`${imgID}`);
 
 
 
-    // Get the <span> element that closes the modal
-    var closebutton = document.getElementsByClassName("close")[0];
+//     // Get the <span> element that closes the modal
+//     var closebutton = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
-    closebutton.onclick = function () {
-        modal.style.display = "none";
-        return false;
-    }
-}
+//     // When the user clicks on <span> (x), close the modal
+//     closebutton.onclick = function () {
+//         modal.style.display = "none";
+//         return false;
+//     }
+// }
 
 // function addCarouselElements() {
 //     console.log("addCarouselElements()");
@@ -89,3 +89,47 @@ function openModal(modalID, imgID, imgNum) {
 //         carousel.style.left = `${currentIndex * (-75)}vw`;
 //     } else console.log("    failed");
 // }
+
+
+
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
