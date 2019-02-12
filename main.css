@@ -226,10 +226,10 @@ img {
     
 }
 
-.video{
-    width:1100px;
-    height: auto;
-    margin-left:80px;
+.video {
+    justify-content: center;
+    
+    width:75vw;
     z-index: 7;
     margin-top: 100px;
     border: 1px solid #D3D3D3;
@@ -341,11 +341,11 @@ img {
 
 
 
-
-
-  .main-nav {
+ 
+.main-nav {
     list-style-type: none;
     display: none;
+    
 }
 
 .nav-links,
@@ -353,11 +353,13 @@ img {
     text-decoration: none;
     color: black;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .main-nav li {
     text-align: left;
     margin: 15px auto;
+    
 }
 
 .logo {
@@ -377,10 +379,12 @@ img {
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     margin-top:18px;
+    
 }
 
 .active {
     display: block;
+    
 }
 
 #chkToggle {
@@ -390,6 +394,13 @@ img {
 #chkToggle:checked + ul.main-nav {
     display: block;
 }
+
+.header {
+    
+    border-bottom: 1px solid #D3D3D3;
+    
+}
+
 
 @media screen and (min-width: 770px) {
     .header {
@@ -494,6 +505,7 @@ img {
 
     .navbar {
         display: flex; 
+        
     }
 
     #chkToggle:checked + ul.main-nav {
