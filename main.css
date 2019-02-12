@@ -51,9 +51,10 @@ p{
 
 .container {
     display:flex;
-    width: 100%;
-    margin-left: 5vw;
+    width: 95%;
+    justify-content: center;
     margin-top:100px;
+    margin-left:5vw;
 }
 
 
@@ -68,8 +69,6 @@ img {
 .column {
     width: 35em;
 }
-
-
 
 
 .design {
@@ -106,8 +105,7 @@ img {
     height: auto;
     flex-grow: 1;
     margin-top: 20px;
-    transition: .3s;
-    
+    transition: .3s;   
 }
 
 .progress:hover{
@@ -127,6 +125,23 @@ img {
     height: auto;
     line-height: 1.6;  
 }
+
+
+.bottom {
+    width: 75vw;
+    height: auto;
+    flex-grow: 1;
+    margin-top: 20px;
+    transition: .3s; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.bottom:hover{
+    transform: scale(1.02);
+}
+
+
 
 .about{
     width: 100%;
@@ -347,8 +362,8 @@ img {
 
 .logo {
     display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
+    font-size: 30px;
+    
     margin-left: 20px;
     font-family: 'Montserrat', sans-serif;
 }
