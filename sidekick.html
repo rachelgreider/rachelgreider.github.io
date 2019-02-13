@@ -55,55 +55,73 @@
         article and the page number. The back cover is an advertisement for Sidekick's mobile app. 
 </p> 
 
+
+
+
     <div class="container" id="container">
-        <div class="column">
-            <div class="progress inCarousel"><img id="myImg1" onclick="openModal('myModal', 'myImg1', 1)" src="Images/magazine/1_contents.jpg" /></div>
-            <div class="progress inCarousel"><img id="myImg2" onclick="openModal('myModal', 'myImg2', 2)" src="Images/magazine/2_heros.jpg" /></div>
-            
-
-        </div>
-
-        <div class="column">
-            <div class="progress inCarousel"><img id="myImg3" onclick="openModal('myModal', 'myImg3', 3)" src="Images/magazine/3_ornamental.jpg" /></div>
-            <div class="progress inCarousel"><img id="myImg4" onclick="openModal('myModal', 'myImg4', 4)" src="Images/magazine/4_article.jpg" /></div>
-            
-
-        </div>
-
-        <div class="column">
-            <div class="progress inCarousel"><img id="myImg5" onclick="openModal('myModal', 'myImg5', 5)" src="Images/magazine/5_article.jpg" /></div>
-            <div class="progress inCarousel"><img id="myImg6" onclick="openModal('myModal', 'myImg6', 6)" src="Images/magazine/6_covers.jpg" /></div>
-            
-
-        </div>
-    </div>
-
-
-    <!-- 3_fan modal-->
-    <div id="myModal" class="modal">
-
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
-
-        <!-- Modal Content (The Image) -->
-        <!--    <img class="modal-content" id="img01">  -->
-
-            <!--                          -->
-            <!--      CAROUSEL HTML       -->
-            <!--                          -->
-            <div class="carouselCover">
-                <div id="carousel1" class="carousel">
-                </div>
-                <div class="carouselButtonContainer">
-                    <div class="slideButton incrementLeft"  onclick="incrementCarousel('carousel1', 0)"></div>
-                    <div class="slideButton incrementRight"  onclick="incrementCarousel('carousel1', 1)"></div>
-                </div>
+            <div class="column columnprogress">
+              <img class="progress" src="Images/magazine/1_contents.jpg" onclick="openModal();currentSlide(1)">
+              <img class="progress" src="Images/magazine/2_heros.jpg" onclick="openModal();currentSlide(2)">
             </div>
+            <div class="column columnprogress">
+              <img class="progress" src="Images/magazine/3_ornamental.jpg" onclick="openModal();currentSlide(3)">
+              <img class="progress" src="Images/magazine/4_article.jpg" onclick="openModal();currentSlide(3)">
+            </div>
+            <div class="column columnprogress">
+              <img class="progress" src="Images/magazine/5_article.jpg" onclick="openModal();currentSlide(4)">
+              <img class="progress" src="Images/magazine/6_covers.jpg" onclick="openModal();currentSlide(5)">
+            </div>
+        
+                            
+          </div>
+          
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                
+                <img src="Images/magazine/1_contents.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/magazine/2_heros.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/magazine/3_ornamental.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/magazine/4_article.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/magazine/5_article.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                
+                    <img src="Images/magazine/6_covers.jpg" style="width:100%">
+                  </div>
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+             
+              
+              
+            </div>
+          </div>
 
 
 
 
-    </div>
 
 
 

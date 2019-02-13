@@ -47,55 +47,70 @@
     <p class="projecttitle"> SugarCreek's product line is expanding rapidly so they were in need of new product photos. SugarCreek used these photos for client handouts, a new trade show booth, and on the company website. These photos were taken in collaboration with Kyle Page. </p>
 
 
+
+
     <div class="container" id="container">
-        <div class="column">
-            <div class="progress inCarousel"><img id="myImg1" onclick="openModal('myModal', 'myImg1', 1)" src="Images/booth_backdrop/3_fan.jpg" /></div>
-            <div class="progress inCarousel"><img id="myImg2" onclick="openModal('myModal', 'myImg2', 2)" src="Images/booth_backdrop/left.jpg" /></div>
-        
-
-        </div>
-
-        <div class="column">
-            <div class="progress inCarousel"><img id="myImg3" onclick="openModal('myModal', 'myImg3', 3)" src="Images/booth_backdrop/4_egg.jpg" /></div>
-            <div class="progress inCarousel"><img id="myImg4" onclick="openModal('myModal', 'myImg4', 4)" src="Images/booth_backdrop/1_sandwich.jpg" /></div>
-            
-
-        </div>
-
-        <div class="column">
-            <div class="progress inCarousel"><img id="myImg5" onclick="openModal('myModal', 'myImg5', 5)" src="Images/booth_backdrop/2_pile.jpg" /></div>
-            <div class="progress inCarousel"><img id="myImg6" onclick="openModal('myModal', 'myImg6', 6)" src="Images/booth_backdrop/right.jpg" /></div>
-            
-
-        </div>
-    </div>
-
-
-    <!-- 3_fan modal-->
-    <div id="myModal" class="modal">
-
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
-
-        <!-- Modal Content (The Image) -->
-        <!--    <img class="modal-content" id="img01">  -->
-
-            <!--                          -->
-            <!--      CAROUSEL HTML       -->
-            <!--                          -->
-            <div class="carouselCover">
-                <div id="carousel1" class="carousel">
-                </div>
-                <div class="carouselButtonContainer">
-                    <div class="slideButton incrementLeft"  onclick="incrementCarousel('carousel1', 0)"></div>
-                    <div class="slideButton incrementRight"  onclick="incrementCarousel('carousel1', 1)"></div>
-                </div>
+            <div class="column columnprogress">
+              <img class="progress" src="Images/booth_backdrop/3_fan.jpg" onclick="openModal();currentSlide(1)">
+              <img class="progress" src="Images/booth_backdrop/left.jpg" onclick="openModal();currentSlide(2)">
             </div>
+            <div class="column columnprogress">
+              <img class="progress" src="Images/booth_backdrop/4_egg.jpg" onclick="openModal();currentSlide(3)">
+              <img class="progress" src="Images/booth_backdrop/1_sandwich.jpg" onclick="openModal();currentSlide(3)">
+            </div>
+            <div class="column columnprogress">
+              <img class="progress" src="Images/booth_backdrop/2_pile.jpg" onclick="openModal();currentSlide(4)">
+              <img class="progress" src="Images/booth_backdrop/right.jpg" onclick="openModal();currentSlide(5)">
+            </div>
+        
+                            
+          </div>
+          
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                
+                <img src="Images/booth_backdrop/3_fan.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/booth_backdrop/left.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/booth_backdrop/4_egg.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/booth_backdrop/1_sandwich.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/booth_backdrop/2_pile.jpg" style="width:100%">
+              </div>
 
+              <div class="mySlides">
+                
+                    <img src="Images/booth_backdrop/right.jpg" style="width:100%">
+                  </div>
 
-
-
-    </div>
+              
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+             
+              
+              
+            </div>
+          </div>
 
 
 

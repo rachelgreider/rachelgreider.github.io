@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+    <script src="script.js"></script>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
@@ -51,7 +51,27 @@
 
       <img class="about" src="Images/observation.jpeg">
         <div class="container">
-                <p class="videotext">My Resume <br> <br> rachel.greider@gmail.com <br> (937)344-7678 </p>
+                <p class="videotext" onclick="openModal();currentSlide(1)">My Resume <br> <br> rachel.greider@gmail.com <br> (937)344-7678</p>
+                  
+                  
+
+                 
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content-resume">
+
+                    <div class="mySlides">
+                
+                        <img src="Images/RachelGreider_resume_S19.jpg" style="width:100%">
+                      </div>
+
+                   
+                </div>
+              </div>
+
+
+
+
                 <p class="videotext2" >Hi! <br>
 
                     I’m Rachel.<br> <br>
