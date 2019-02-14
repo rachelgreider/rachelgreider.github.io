@@ -156,15 +156,16 @@ img {
 }
 
 .videotext {
-    margin-left:80px;
-    width: 500px;
+    margin-left:10vw;
+    width: 25vw;
     margin-top: -50px;
     line-height: 1.6;
     border-right: 1px solid #D3D3D3;
 }
 .videotext2 {
-    margin-left:80px;
-    width: 500px;
+    margin-left:10vw;
+    margin-right:10vw;
+    width: 40vw;
     margin-top: -50px;
     line-height: 1.6;
     
