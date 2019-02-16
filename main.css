@@ -256,7 +256,7 @@ img {
     margin: auto;
     padding: 0;
     
-    max-height:20vh;
+    max-width:39vw;
   }
   
   .modal-content-resume {
@@ -296,7 +296,7 @@ img {
     cursor: pointer;
     position: fixed;
     top: 1vh;
-    width: 21vw;
+    width: 32vw;
     padding: 16px;
     
     color: rgb(70, 70, 70);
