@@ -1,0 +1,125 @@
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 0 150px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+a:hover {
+    color: black;
+}
+
+.column {
+    width:45vw;
+}
+
+.copyright {
+    margin-right:80vw;
+    margin-top:-4vh;
+    line-height: 1.6;
+    width:35vw;
+    font-size: 8pt;
+    
+ }
+
+img {
+    width: 96%;
+    height: auto;
+    outline: 1px solid #D3D3D3;
+    flex-grow: 1;
+    margin-top: 11px;
+}
+
+.lotus{
+    outline-color:#4eb8c7;
+}
+
+.name {
+    height:12vw;
+    width: auto;
+    margin-left: 80vw;
+    margin-top: 75vh;
+    position: fixed;
+    outline: 1px solid  #FFA438;
+}
+
+
+p{
+    font-family: 'Montserrat', sans-serif;       
+}
+
+.projecttitle {
+    margin-left: 10vw;
+    line-height:1.6;
+    font-family: 'Montserrat', sans-serif;
+    width: 35vw;
+  
+} 
+
+.title {  
+    margin-left:10vw;
+    margin-top:10vh;
+    padding-bottom:10px;
+    font-family: 'Montserrat', sans-serif;   
+}
+
+
+
+.row {
+    display:flex;
+}
+
+.scroll-full-screen {
+    height:auto;
+    width: 100vw;
+    margin-top: 0;
+
+}
+
+.scroll-horizontal {
+    height: auto;
+    width: 80vw;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+}
+
+.scroll-square {
+    height:auto;
+    width: 50vw;
+    margin-top: 10vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    
+}
+
+.scroll-vertical {
+    height:auto;
+    width: 35vw;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    
+}
+
+
+
+video{
+    outline: 1px solid #D3D3D3;
+}
