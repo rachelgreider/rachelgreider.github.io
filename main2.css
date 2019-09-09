@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    margin: 0 0 150px;
+    margin: 0 0 10vh;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -37,6 +37,9 @@ a:hover {
     
  }
 
+
+
+
 img {
     width: 96%;
     height: auto;
@@ -50,10 +53,10 @@ img {
 }
 
 .name {
-    height:12vw;
+    height:20vh;
     width: auto;
     margin-left: 80vw;
-    margin-top: 75vh;
+    bottom: 50px;
     position: fixed;
     outline: 1px solid  #FFA438;
 }
@@ -85,10 +88,10 @@ p{
 }
 
 .scroll-full-screen {
-    height:auto;
+    height:50%;
     width: 100vw;
     margin-top: 0;
-
+    
 }
 
 .scroll-horizontal {
