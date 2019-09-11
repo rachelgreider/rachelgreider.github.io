@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="script.js"></script>
+
+    <title>Rachel Greider</title>
+</head>
+
+<body>
+    <body>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  
+   
+  
+  
+   <nav class="navbar header">
+          
+      <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+              <i class="fa fa-bars"></i>
+          </label>
+          
+          <h1><a href="index.html" class="logo">Rachel Greider</a></h1>
+      <input type="checkbox" id="chkToggle"></input>
+  
+      <ul class="main-nav headernav" id="js-menu">
+          
+          <li>
+              <h3 class="nav1"><a href="grid.html" class="nav-links">Design</a></h3>
+          </li>
+          <li>
+              <h3 class="nav2"><a href="fine_arts.html" class="nav-links">Fine Arts</a></h3>
+          </li>
+          <li>
+              <h3 class="nav3"><a href="about.html" class="nav-links">About</a></h3>
+          </li>
+          
+      </ul>
+  </nav>
+  
+
+    <h3 class="title">Protein Photoshoot</h3>
+    <p class="projecttitle"> SugarCreek's product line is expanding rapidly so they were in need of new product photos. SugarCreek used these photos for client handouts, a new trade show booth, and on the company website. These photos were taken in collaboration with Kyle Page. </p>
+
+
+
+
+    <div class="container" id="container">
+            <div class="column columnprogress">
+              <img class="progress" src="Images/booth_backdrop/3_fan.jpg" onclick="openModal();currentSlide(1)">
+              <img class="progress" src="Images/booth_backdrop/left.jpg" onclick="openModal();currentSlide(2)">
+            </div>
+            <div class="column columnprogress">
+              <img class="progress" src="Images/booth_backdrop/4_egg.jpg" onclick="openModal();currentSlide(3)">
+              <img class="progress" src="Images/booth_backdrop/1_sandwich.jpg" onclick="openModal();currentSlide(4)">
+            </div>
+            <div class="column columnprogress">
+              <img class="progress" src="Images/booth_backdrop/2_pile.jpg" onclick="openModal();currentSlide(5)">
+              <img class="progress" src="Images/booth_backdrop/right.jpg" onclick="openModal();currentSlide(6)">
+            </div>
+        
+                            
+          </div>
+          
+          <!-- The Modal/Lightbox -->
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+          
+              <div class="mySlides">
+                
+                <img src="Images/booth_backdrop/3_fan.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/booth_backdrop/left.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/booth_backdrop/4_egg.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/booth_backdrop/1_sandwich.jpg" style="width:100%">
+              </div>
+          
+              <div class="mySlides">
+                
+                <img src="Images/booth_backdrop/2_pile.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                
+                    <img src="Images/booth_backdrop/right.jpg" style="width:100%">
+                  </div>
+
+              
+              <!-- Next/previous controls -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+             
+              
+              
+            </div>
+          </div>
+
+
+
+
+    <div class="footer">
+        <p class="copyright">&copy; 2019 Rachel Greider </p><p class="copyright2">github.com/rachelgreider/rachelgreider.github.io</p> 
+    </div>
+
+
+</body>
+
+</html>
+   

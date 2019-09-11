@@ -59,7 +59,26 @@ img {
     bottom: 50px;
     position: fixed;
     outline: 1px solid  #FFA438;
+     filter: none;
+    opacity: 100;
+    flex-grow: 1;
+    transition: .3s;
+
+    -webkit-transition: opacity 1s ease out;
+    -moz-transition: opacity 1s ease out;
+    -ms-transition: opacity 1s ease out;
+    -o-transition: opacity 1s ease out;
+    transition: opacity 1s ease out;
 }
+
+
+.name:hover{
+    filter: alpha (opacity=50);
+    opacity: .5;
+    transform: scale(1.02);
+}
+
+
 
 
 p{
@@ -120,7 +139,6 @@ p{
     margin-right: 10vw;
     
 }
-
 
 
 video{
