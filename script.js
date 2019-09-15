@@ -118,7 +118,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  if (!slides) return;
+  if (!slides || slides.length === 0) return;
   
   var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
@@ -133,5 +133,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
-} 
+}
 
