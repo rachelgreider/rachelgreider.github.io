@@ -49,6 +49,10 @@ a:hover {
     
 }
 
+.anonymous{
+    outline-color:#855513;
+}
+
 .column {
     width:45vw;
 }
