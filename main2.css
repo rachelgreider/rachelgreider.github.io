@@ -126,11 +126,7 @@ img {
 }
 
 .name {
-    height:20vh;
-    width: auto;
-    margin-left: 80vw;
-    bottom: 50px;
-    position: fixed;
+    
     outline: 1px solid  #FFA438;
     filter: none;
     opacity: 100;
@@ -151,7 +147,13 @@ img {
     transform: scale(1.02);
 }
 
-
+.back{
+    height:23vh;
+    width: auto;
+    margin-left: 80vw;
+    bottom: 80px;
+    position: fixed;
+}
 
 
 p{
@@ -184,6 +186,13 @@ p{
     width: 100vw;
     margin-top: 0;
     
+}
+.scroll-banner {
+    height:50%;
+    width: 80vw;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .scroll-horizontal {
