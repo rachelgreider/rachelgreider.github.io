@@ -24,22 +24,7 @@ a:hover {
     color: black;
 }
 
-.about-text{
-    margin-left:10vw;
-    width: 42vw;
-    margin-top: -60%;
-    line-height: 1.6;
-    
-}
 
-.about-text-background{
-    width:45vw;
-    margin-left:10vw;
-    margin-top: -60%;
-    color:green;
-    
-
-}
 
 
 
@@ -93,13 +78,7 @@ p{
     display: table;
 }
 
-.container {
-    display:flex;
-    width: 95%;
-    justify-content: center;
-    margin-top:17vh;
-    margin-left:3vw;
-}
+
 
 
 img {
@@ -116,34 +95,6 @@ video{
 
 
 
-.design {
-    filter: none;
-    opacity: 100;
-    flex-grow: 1;
-    transition: .3s;
-
-    -webkit-transition: opacity 1s ease out;
-    -moz-transition: opacity 1s ease out;
-    -ms-transition: opacity 1s ease out;
-    -o-transition: opacity 1s ease out;
-    transition: opacity 1s ease out;
-
-}
-
-.design:hover{
-    filter: alpha (opacity=50);
-    opacity: .5;
-    transform: scale(1.02);
-}
-
-.gridimages{
-    flex-grow: 1;
-    transition: .3s;
-}
-
-.gridimages:hover{
-    transform: scale(1.02);
-}
 
 .progress {
     width: 92%;
@@ -170,128 +121,6 @@ video{
     height: auto;
     line-height: 1.6;  
 }
-
-.scroll-square {
-    height:auto;
-    width: 50vw;
-    margin-top: 15vh;
-    margin-left: 25vw;
-    margin-right: 25vw;
-    
-}
-
-.scroll-vertical {
-    height:auto;
-    width: 35vw;
-    margin-top: 15vh;
-    margin-left: 25vw;
-    margin-right: 25vw;
-    
-}
-
-.scroll-horizontal {
-    height: auto;
-    width: 75vw;
-    margin-top: 15vh;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    
-}
-
-.scroll-full-screen {
-    height:auto;
-    width: 100vw;
-    margin-top: -25vh;
-
-}
-
-
-
-
-
-.video {
-    margin-left:12vw;
-    
-    width:75vw;
-    z-index: 7;
-    margin-top: 100px;
-    border: 1px solid #D3D3D3;
-}
-
-.videotext {
-    margin-left:10vw;
-    width: 25vw;
-    margin-top: -50px;
-    line-height: 1.6;
-    border-right: 1px solid #D3D3D3;
-}
-.videotext2 {
-    margin-left:10vw;
-    margin-right:10vw;
-    width: 40vw;
-    margin-top: -50px;
-    line-height: 1.6;
-    
-}
-
-
-
-.bottom {
-    width: 75vw;
-    height: auto;
-    flex-grow: 1;
-    margin-top: 20px;
-    transition: .3s; 
-    
-    margin-left: 10vw;
-}
-
-.bottom:hover{
-    transform: scale(1.02);
-}
-
-
-
-.about{
-    width: 100%;
-    margin-top:0px;
-}
-
-#container {
-    display:flex;
-    width: 90%;
-    justify-content: center;
-}
-
-.demo {
-    margin-top: 100px;
-    width:100vw;
-    
-}
-
-.footer {
-    background-color: white;
-    height: 100px;
-    position: absolute;
-    width: 100vw;
-    opacity: .75;
-    outline: 1px solid #D3D3D3;
-    bottom: 0;
- }
-
- .copyright {
-    margin-left:80px;
-    margin-top: 30px;
-    line-height: 1.6;
- }
-
- .copyright2 {
-    margin-left:65vw;
-    margin-top: -20px;
- }
-
-
-
 
 
 

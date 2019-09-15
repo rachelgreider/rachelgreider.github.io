@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"-->
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 <!--GET RID OF THIS WHEN DONE-->
@@ -16,8 +17,28 @@
     <title>Rachel Greider</title>
   </head>
   <body>
-    <body>
+    
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+      <img class="about" src="Images/observation.jpeg">
+      <div class="container">
+          <div class="about-text-div" onclick="openModal();currentSlide(1)">
+            <p class="about-text" >Hi, I’m Rachel! <br>  a Communication Designer </p><br>
+              <p class="about-text-small" >Click here to view my resume <br>or scroll down to see my work.</p>
+          </div>
+              <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content-resume">
+  
+                  <div class="mySlides">
+                      <img src="Images/RachelGreider_resume_F19.pdf" style="width:100%">
+                  </div>
+              </div>
+          </div>
+  
+              
+      </div>
+
 
     <div class="container">
         <div class="column">
@@ -45,6 +66,10 @@
 
         
     </div>
+
+
+
+
 
       
     <!-- Optional JavaScript -->

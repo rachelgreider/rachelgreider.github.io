@@ -24,8 +24,46 @@ a:hover {
     color: black;
 }
 
+.about {
+    width: 100%;
+    margin-top:0px;
+}
+
+.about-text{
+    line-height: 1.6;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.about-text-small{
+    line-height: 1.6;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.about-text-div{
+    margin-left:35vw;
+    width: 40vw;
+    margin-top: -90vh;
+    height: 10vh;
+    
+}
+
 .column {
     width:45vw;
+}
+
+.container {
+    display:flex;
+    width: 95%;
+    justify-content: center; 
+    margin-left:3vw;
+}
+
+#container {
+    display:flex;
+    width: 90%;
+    justify-content: center;
 }
 
 .copyright {
@@ -37,7 +75,40 @@ a:hover {
     
  }
 
+.design {
+    filter: none;
+    opacity: 100;
+    flex-grow: 1;
+    transition: .3s;
 
+    -webkit-transition: opacity 1s ease out;
+    -moz-transition: opacity 1s ease out;
+    -ms-transition: opacity 1s ease out;
+    -o-transition: opacity 1s ease out;
+    transition: opacity 1s ease out;
+
+}
+
+.design:hover{
+    filter: alpha (opacity=50);
+    opacity: .5;
+    transform: scale(1.02);
+}
+
+
+
+.grid{
+    margin-top: 700px
+}
+
+.gridimages{
+    flex-grow: 1;
+    transition: .3s;
+}
+
+.gridimages:hover{
+    transform: scale(1.02);
+}
 
 
 img {
@@ -59,7 +130,7 @@ img {
     bottom: 50px;
     position: fixed;
     outline: 1px solid  #FFA438;
-     filter: none;
+    filter: none;
     opacity: 100;
     flex-grow: 1;
     transition: .3s;
@@ -143,4 +214,8 @@ p{
 
 video{
     outline: 1px solid #D3D3D3;
+}
+
+.wig{
+    outline-color: #bd34eb;
 }
