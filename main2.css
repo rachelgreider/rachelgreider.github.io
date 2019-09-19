@@ -53,6 +53,14 @@ a:hover {
     outline-color:#855513;
 }
 
+.back{
+    height:23vh;
+    width: auto;
+    margin-left: 80vw;
+    bottom: 80px;
+    position: fixed;
+}
+
 .brew {
     outline-color:#855513;
 }
@@ -118,6 +126,10 @@ a:hover {
     transform: scale(1.02);
 }
 
+.hbo-motion {
+    outline-color:#bd34eb;;
+}
+
 .holidays{
     outline-color:#75e0a2;
 }
@@ -158,13 +170,7 @@ img {
     transform: scale(1.02);
 }
 
-.back{
-    height:23vh;
-    width: auto;
-    margin-left: 80vw;
-    bottom: 80px;
-    position: fixed;
-}
+
 
 
 p{
