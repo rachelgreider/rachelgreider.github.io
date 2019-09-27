@@ -50,27 +50,28 @@ a:hover {
 }
 
 .anonymous{
-    outline-color:#855513;
+    outline-color:#a67c4c;
+    background-color:#a67c4c;
 }
 
-.back {
-    filter: none;
+.back{
     color: black;
+    filter: none;
+    opacity: 50;
     flex-grow: 1;
-    transition: .3s;
+    transition: .5s;
 
-    -webkit-transition: color 1s ease out;
-    -moz-transition: color 1s ease out;
-    -ms-transition: color 1s ease out;
-    -o-transition: color 1s ease out;
-    transition: color 1s ease out;
+    -webkit-transition: background-color outline 1s ease out;
+    -moz-transition: background-color outline 1s ease out;
+    -ms-transition: background-color outline 1s ease out;
+    -o-transition: background-color outline 1s ease out;
+    transition: background-color outline 1s ease out;
     transform-origin: top left;
     
 }
 
 
 .back:hover{
-    
     color: #FFA438;
     transform: scale(1.2);
 }
@@ -78,7 +79,8 @@ a:hover {
 
 
 .brew {
-    outline-color:#855513;
+    outline-color:#7487b8;
+    background-color:#7487b8;
 }
 
 .column {
@@ -108,47 +110,84 @@ a:hover {
  }
 
 .design {
-    filter: none;
-    opacity: 100;
     flex-grow: 1;
     transition: .3s;
-
-    -webkit-transition: opacity 1s ease out;
-    -moz-transition: opacity 1s ease out;
-    -ms-transition: opacity 1s ease out;
-    -o-transition: opacity 1s ease out;
-    transition: opacity 1s ease out;
-    
-
+    transform: translateX(1.1%)
 }
 
 .design:hover{
-    filter: alpha (opacity=50);
-    opacity: .5;
-    transform: scale(1.02);
-}
+    transform: scale(1.02) translateX(1.2%) ;
+} 
 
 
 
-.grid{
-    margin-top: 700px
-}
 
-.gridimages{
-    flex-grow: 1;
-    transition: .3s;
-}
 
-.gridimages:hover{
-    transform: scale(1.02);
-}
+
+.wrap{
+    overflow: hidden;
+    position: relative;
+  }
+  
+.hover div{
+    -webkit-transition: all 0.4s; 
+    -moz-transition: all 0.4s; 
+    transition: all 0.4s;
+  }
+  
+.hover{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0;
+  }
+  
+.pop-up-box{
+    width: 96.2%;
+    height: 60px;
+    position: absolute;
+    bottom: -50%;
+    opacity: .9;
+    
+  }
+  
+.hover:hover .pop-up-box{
+     bottom: 0%;  
+  }
+
+p.grid-project-title{
+    
+    transform: translateY(20%);
+    text-align: center;
+  }
+  
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hbo-motion {
-    outline-color:#bd34eb;;
+    outline-color:#a6342b;
+    background-color:#a6342b;
 }
 
 .holidays{
-    outline-color:#75e0a2;
+    outline-color:#a5d9c8;
+    background-color:#a5d9c8;
 }
 
 img {
@@ -157,14 +196,18 @@ img {
     outline: 1px solid #D3D3D3;
     flex-grow: 1;
     margin-top: 11px;
+    
 }
 
 .ka {
-    outline-color:#4eb8c7;
+    outline-color:#8e939e;
+    background-color:#8e939e;
 }
 
 .lotus{
     outline-color:#4eb8c7;
+    background-color:#4eb8c7;
+    
 }
 
 .name {
@@ -262,15 +305,22 @@ p{
 }
 
 .sidekick{
-    outline-color:#fff291;
+    outline-color:#FFA438;
+    background-color: #FFA438; 
 }
 
 video{
     outline: 1px solid #D3D3D3;
 }
 
+.vhs {
+    outline-color: #fff291;
+    background-color: #fff291;
+}
+
 .wig{
-    outline-color: #bd34eb;
+    outline-color: #bd94eb;
+    background-color: #bd94eb;
 }
 
 .wordmark{

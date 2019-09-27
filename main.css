@@ -1,4 +1,4 @@
-html {
+/*html {
     position: relative;
     min-height: 100%;
     margin: 0;
@@ -66,17 +66,17 @@ p{
 
 
 }
-  
+  */
 
-.column {
+/*.column {
     width:35em;
-}
+}*/
 
-.row {
+/*.row {
     content: "";
     clear: both;
     display: table;
-}
+}*/
 
 
 
@@ -85,7 +85,7 @@ p{
 
 
 
-
+/*d
 
 .progress {
     width: 92%;
@@ -113,17 +113,17 @@ p{
     line-height: 1.6;  
 }
 
+*/
 
 
-
-  /* Create four equal columns that floats next to eachother */
+  /* Create four equal columns that floats next to eachother 
   .columnprogress {
     float: left;
     width: 25%;
     
-  }
+  }*/
   
- 
+  /*
   .modal {
     display: none;
     position: fixed;
@@ -405,11 +405,7 @@ p{
 
 
 
-    * {
-        
-        padding: 0;
-        margin: 0;
-    }
+   
 
     .main-nav {
         display: flex;
@@ -430,7 +426,7 @@ p{
 }
 
 
-
+*/
  
 /* 
 
