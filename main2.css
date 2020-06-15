@@ -10,6 +10,24 @@ body {
     margin: 0 0 10vh;
     max-width: 100%;
     overflow-x: hidden;
+    margin-bottom:18vh;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    height:15vh;
+    width: 100%;
+    background-color:  #ffffff;
+    outline: 3px solid rgb(225, 225, 225);
+    
+}
+
+.footertext{
+    color: rgb(160, 160, 160)  ;
+    text-align: center;
+    line-height:1.6;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 
@@ -79,8 +97,8 @@ a:hover {
 
 
 .brew {
-    outline-color:#7487b8;
-    background-color:#7487b8;
+    outline-color:#D7B4B3;
+    background-color:#D7B4B3;
 }
 
 .column {
@@ -146,7 +164,7 @@ a:hover {
     width: 96.2%;
     height: 60px;
     position: absolute;
-    bottom: -50%;
+    bottom: -100%;
     opacity: .9;
     
   }
@@ -202,6 +220,7 @@ img {
 .ka {
     outline-color:#8e939e;
     background-color:#8e939e;
+    
 }
 
 .lotus{
