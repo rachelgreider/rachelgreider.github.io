@@ -1,0 +1,297 @@
+body{
+    font-family: 'Montserrat', sans-serif; 
+    height:100%;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #f7f1ea;
+} 
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: #922b1f;;
+}
+a:hover {
+    color:  #922b1f;;
+}
+
+header {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faa628;
+    
+}
+
+.heading {
+    height: 80%;
+}
+
+.design{
+    height:600vh;
+    display:flex;
+    overflow: hidden;
+}
+
+.about-title{
+    width: 50%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0!important;
+    justify-content: space-around ;
+    
+}
+
+.about{
+    font-weight: 300;
+    font-size: 1.25em;
+    color: #922b1f;
+    /*position: fixed;*/
+    margin-top: 25vh;
+    margin-left: -5vw;
+}
+
+.about-pic{
+    height:25vh;
+    margin-top: 32vh;
+    margin-left: 14vw;
+    /*position:fixed;*/
+}
+
+.vine{
+    height:160vh;
+    margin-left: 20vw;
+    margin-top: 5vh;
+    /*position:fixed;*/
+    z-index:-2;
+}
+
+.nav1{
+    font-family:ivymode, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #922b1f;
+    letter-spacing: .16em;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    position: fixed;
+    margin-top: -5vh;
+    margin-left: 2vw;
+    z-index: 1;
+}
+
+.resume1{
+    font-family:ivymode, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #922b1f;
+    letter-spacing: .16em;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    position: fixed;
+    margin-top: -80vh;
+    margin-left: 2vw;
+    z-index: 1;
+}
+
+.section-title{
+    font-size: 6vw;
+    font-weight: black; 
+    color:#922b1f;
+    margin-left: 50vw;
+    z-index:1;
+}
+
+.section-title-background {
+    background-color: #f6a226; 
+    opacity: 30%;
+}
+
+.title {
+    font-size: 6vw;
+    font-weight: black;
+    margin-left: -30vw;
+    margin-top:-68vh;
+    color:#f6a226; 
+    line-height: 12vh;
+}
+
+
+.project-pages{
+    height:100%;
+    width: 50%;
+    z-index: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    
+}
+
+.project-pages div{
+    height: 100vh;
+    align-items: left;
+    
+}
+
+.project-pages div> p{
+    width:80%;
+    font-size: 18px;
+    line-height:30px;
+}
+
+
+.design-images{
+    object-fit: fill;
+    height: 100%;
+}
+
+.design-images-a{
+    height:100%;
+    
+}
+
+
+
+
+
+
+.fineart{
+    height:710vh;
+    display:flex;
+
+}
+
+.photo-pages{
+    width: 75%;
+    
+}
+
+.photo-pages div{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+    
+}
+
+.photo-pages div> p{
+    width:80%;
+    font-size: 18px;
+    line-height:30px;
+}
+
+.ceramics{
+    padding-top: 2vh;
+    width: 100%;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+.random{
+    width: 50%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0!important;
+}
+
+
+
+.etsy{
+    font-weight: 300;
+    font-size: .9em;
+    color: #922b1f;
+    position: fixed;
+    margin-top: -35vh;
+    margin-left: -6vw;
+    border: 1px solid;
+    padding:7px;
+}
+
+.about-pic2{
+    height:40vh;
+    margin-top: 7vh;
+    margin-left: 7vw;
+    position:fixed;
+    z-index: 1;
+}
+
+.vine2{
+    height:130vh;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    position:fixed;
+    z-index:-1;
+}
+
+.nav2{
+    font-family:ivymode, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: .75em;
+    color: #922b1f;
+    letter-spacing: .16em;
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    position: fixed;
+    margin-top: -45vh;
+    margin-left: 18vw;
+    z-index: 2;
+}
+
+.resume2{
+    font-family:ivymode, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: .75em;
+    color: #922b1f;
+    letter-spacing: .16em;
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    position: fixed;
+    margin-top: 30vh;
+    margin-left: 18vw;
+    z-index: 1;
+}
+
+
+footer{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faa628;
+    text-align: center;
+    line-height:30px;
+    font-size:17px;
+    
+}
+
+footer>p {
+color: #922b1f;
+}
+
+
+
+
+
+
