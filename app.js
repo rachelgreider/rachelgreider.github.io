@@ -6,7 +6,7 @@ function splitScroll(){
         triggerElement: '.random', 
         triggerHook: 0
     })
-    .setPin('.random').addIndicators().addTo(controller);
+    .setPin('.random')/*.addIndicators()*/.addTo(controller);
 /**************
     new ScrollMagic.Scene({
       //    AARON——using percents is already responsive, but it was set to the wrong value; 1000% to 500%
@@ -29,11 +29,44 @@ function splitScroll(){
         triggerHook: .25,
         offset: 50        
       })
-        .setPin(this).addIndicators().addTo(controller);
+        .setPin(this)/*.addIndicators()*/.addTo(controller);
     });
 /**************/
 /**************/
 /**************/
+$('.about-pic').each(function () {
+  // Create a scene for each project
+  var myScene = new ScrollMagic.Scene({
+    duration: '500%',
+    triggerElement: this,
+    triggerHook: .75,
+    offset: 50        
+  })
+    .setPin(this).addIndicators().addTo(controller);
+});
+
+$('.vine').each(function () {
+  // Create a scene for each project
+  var myScene = new ScrollMagic.Scene({
+    duration: '500%',
+    triggerElement: this,
+    triggerHook: 0,
+    offset: 0        
+  })
+    .setPin(this).addIndicators().addTo(controller);
+});
+
+/*$('.about').each(function () {
+  // Create a scene for each project
+  var myScene = new ScrollMagic.Scene({
+    duration: '500%',
+    triggerElement: this,
+    triggerHook: .75,
+    offset: 50        
+  })
+    .setPin(this).addIndicators().addTo(controller);
+});*/
+
 }
 splitScroll();
 

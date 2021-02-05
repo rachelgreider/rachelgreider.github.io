@@ -46,27 +46,35 @@ header {
     
 }
 
+/*.about{
+    font-weight: 300;
+    font-size: 1.25em;
+    color: #922b1f;
+    margin-top: 25vh;
+    margin-left: -5vw;
+}*/
+
 .about{
     font-weight: 300;
     font-size: 1.25em;
     color: #922b1f;
-    /*position: fixed;*/
-    margin-top: 25vh;
-    margin-left: -5vw;
+    margin-top: 50vh;
+    margin-left: 0vw;
+    position:fixed;
+    background-color: aquamarine;
+    z-index:2;
 }
 
 .about-pic{
     height:25vh;
-    margin-top: 32vh;
+    margin-top:500vh;
     margin-left: 14vw;
-    /*position:fixed;*/
 }
 
 .vine{
     height:160vh;
-    margin-left: 20vw;
-    margin-top: 5vh;
-    /*position:fixed;*/
+    margin-top: -700vh;
+    margin-left: 30vw;
     z-index:-2;
 }
 
