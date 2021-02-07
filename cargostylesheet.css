@@ -38,11 +38,12 @@ header {
 .about-title{
     width: 50%;
     height: 100vh;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    /*display:flex;*/
+    display:block;
+    /*flex-direction: column;*/
+    /*align-items: center;*/
     margin: 0!important;
-    justify-content: space-around ;
+    /*justify-content: space-around ;*/
     
 }
 
@@ -58,17 +59,16 @@ header {
     font-weight: 300;
     font-size: 1.25em;
     color: #922b1f;
-    margin-top: 50vh;
-    margin-left: 0vw;
-    position:fixed;
-    background-color: aquamarine;
-    z-index:2;
+    /*margin-top: 25vh;*/
+    margin-left: 6vw;
+    
+    z-index: -1;
 }
 
 .about-pic{
     height:25vh;
-    margin-top:500vh;
-    margin-left: 14vw;
+    /*margin-top:50vh;
+    margin-left: 14vw;*/
 }
 
 .vine{

@@ -33,7 +33,7 @@ function splitScroll(){
     });
 /**************/
 /**************/
-/**************/
+/*******
 $('.about-pic').each(function () {
   // Create a scene for each project
   var myScene = new ScrollMagic.Scene({
@@ -55,8 +55,8 @@ $('.vine').each(function () {
   })
     .setPin(this).addIndicators().addTo(controller);
 });
-
-/*$('.about').each(function () {
+*******/
+$('.about-title').each(function () {
   // Create a scene for each project
   var myScene = new ScrollMagic.Scene({
     duration: '500%',
@@ -65,7 +65,7 @@ $('.vine').each(function () {
     offset: 50        
   })
     .setPin(this).addIndicators().addTo(controller);
-});*/
+});
 
 }
 splitScroll();
