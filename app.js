@@ -33,42 +33,34 @@ function splitScroll(){
     });
 /**************/
 /**************/
-/*******
-$('.about-pic').each(function () {
-  // Create a scene for each project
-  var myScene = new ScrollMagic.Scene({
-    duration: '500%',
-    triggerElement: this,
-    triggerHook: .75,
-    offset: 50        
-  })
-    .setPin(this).addIndicators().addTo(controller);
-});
 
-$('.vine').each(function () {
-  // Create a scene for each project
-  var myScene = new ScrollMagic.Scene({
-    duration: '500%',
-    triggerElement: this,
-    triggerHook: 0,
-    offset: 0        
-  })
-    .setPin(this).addIndicators().addTo(controller);
-});
-*******/
 $('.about-title').each(function () {
   // Create a scene for each project
   var myScene = new ScrollMagic.Scene({
-    duration: '500%',
+    duration: '530%',
     triggerElement: this,
     triggerHook: .75,
-    offset: 50        
+    offset: 365      
   })
-    .setPin(this).addIndicators().addTo(controller);
+    .setPin(this)/**.addIndicators()**/.addTo(controller);
+});
+
+$('.navigation1').each(function () {
+  // Create a scene for each project
+  var myScene = new ScrollMagic.Scene({
+    duration: '650%',
+    triggerElement: this,
+    triggerHook: 1,
+    offset: 0        
+  })
+    .setPin(this,{pushFollowers: false})
+    .addTo(controller);
 });
 
 }
 splitScroll();
+
+
 
 
 /** opacity fade in/out - not currently working 

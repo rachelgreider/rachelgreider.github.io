@@ -27,12 +27,14 @@ header {
 
 .heading {
     height: 80%;
+    z-index: 2;
 }
 
 .design{
     height:600vh;
     display:flex;
     overflow: hidden;
+    z-index: 1;
 }
 
 .about-title{
@@ -47,19 +49,13 @@ header {
     
 }
 
-/*.about{
-    font-weight: 300;
-    font-size: 1.25em;
-    color: #922b1f;
-    margin-top: 25vh;
-    margin-left: -5vw;
-}*/
+
 
 .about{
     font-weight: 300;
     font-size: 1.25em;
     color: #922b1f;
-    /*margin-top: 25vh;*/
+    margin-top: 15vh;
     margin-left: 6vw;
     
     z-index: -1;
@@ -67,15 +63,17 @@ header {
 
 .about-pic{
     height:25vh;
-    /*margin-top:50vh;
-    margin-left: 14vw;*/
+    margin-top:0vh;
+    margin-left: 30vw;
 }
 
 .vine{
     height:160vh;
-    margin-top: -700vh;
-    margin-left: 30vw;
-    z-index:-2;
+    position: relative;
+    margin-left: 17vw;
+    margin-top:-50vh;
+    
+   
 }
 
 .nav1{
@@ -87,10 +85,10 @@ header {
     letter-spacing: .16em;
     transform: rotate(-90deg);
     transform-origin: left top 0;
-    position: fixed;
+    position: relative;
     margin-top: -5vh;
     margin-left: 2vw;
-    z-index: 1;
+    z-index: 3;
 }
 
 .resume1{
@@ -102,10 +100,16 @@ header {
     letter-spacing: .16em;
     transform: rotate(-90deg);
     transform-origin: left top 0;
-    position: fixed;
+    position: relative;
     margin-top: -80vh;
     margin-left: 2vw;
-    z-index: 1;
+    z-index: 3;
+}
+
+.navigation1{
+    position: relative;
+    z-index:3;
+
 }
 
 .section-title{
@@ -134,8 +138,7 @@ header {
 .project-pages{
     height:100%;
     width: 50%;
-    z-index: 1;
-    
+    z-index: 4;
     display: flex;
     flex-direction: column;
     justify-content: space-around ;
@@ -178,7 +181,7 @@ header {
 
 .photo-pages{
     width: 75%;
-    
+    z-index:4;
 }
 
 .photo-pages div{
@@ -228,7 +231,7 @@ html {
     font-weight: 300;
     font-size: .9em;
     color: #922b1f;
-    position: fixed;
+    position: absolute;
     margin-top: -35vh;
     margin-left: -6vw;
     border: 1px solid;
@@ -239,15 +242,15 @@ html {
     height:40vh;
     margin-top: 7vh;
     margin-left: 7vw;
-    position:fixed;
+    position:absolute;
     z-index: 1;
 }
 
 .vine2{
     height:130vh;
-    margin-left: 10vw;
+    margin-left: 15vw;
     margin-top: 5vh;
-    position:fixed;
+    position:absolute;
     z-index:-1;
 }
 
@@ -260,9 +263,9 @@ html {
     letter-spacing: .16em;
     transform: rotate(90deg);
     transform-origin: left top 0;
-    position: fixed;
-    margin-top: -45vh;
-    margin-left: 18vw;
+    position: absolute;
+    margin-top: -85vh;
+    margin-left: 45vw;
     z-index: 2;
 }
 
@@ -275,7 +278,7 @@ html {
     letter-spacing: .16em;
     transform: rotate(90deg);
     transform-origin: left top 0;
-    position: fixed;
+    position: absolute;
     margin-top: 30vh;
     margin-left: 18vw;
     z-index: 1;
