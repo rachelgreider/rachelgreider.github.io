@@ -72,12 +72,13 @@ header {
     opacity: 0;
 }
 
-/*.vine{
+.vine{
     height:160vh;
     position: relative;
     margin-left: 0vw;
     margin-top:-50vh;
-}*/
+    
+}
 
 .nav1{
     font-family:ivymode, sans-serif;
