@@ -1,3 +1,7 @@
+@media screen and (max-width: 770px) {
+
+
+
 body{
     font-family: 'Montserrat', sans-serif; 
     height:100%;
@@ -26,19 +30,19 @@ header {
 }
 
 .heading {
-    height: 80%;
+    height: 40%;
     z-index: 2;
 }
 
 .design{
     height:600vh;
     display:flex;
-    overflow: hidden;
+    overflow-x: hidden;
     z-index: 1;
 }
 
 .about-title{
-    width: 50%;
+    width: 0%;
     height: 100vh;
     /*display:flex;*/
     display:block;
@@ -46,7 +50,7 @@ header {
     /*align-items: center;*/
     margin: 0!important;
     /*justify-content: space-around ;*/
-    
+    opacity: 0;
 }
 
 
@@ -57,7 +61,7 @@ header {
     color: #922b1f;
     margin-top: 15vh;
     margin-left: 6vw;
-    
+    opacity: 0;
     z-index: -1;
 }
 
@@ -65,16 +69,15 @@ header {
     height:25vh;
     margin-top:0vh;
     margin-left: 30vw;
+    opacity: 0;
 }
 
-.vine{
+/*.vine{
     height:160vh;
     position: relative;
-    margin-left: 17vw;
+    margin-left: 0vw;
     margin-top:-50vh;
-    
-   
-}
+}*/
 
 .nav1{
     font-family:ivymode, sans-serif;
@@ -107,16 +110,16 @@ header {
 }
 
 .navigation1{
-    position: relative;
+    position: absolute;
     z-index:3;
 
 }
 
 .section-title{
-    font-size: 6vw;
+    font-size: 10vw;
     font-weight: black; 
     color:#922b1f;
-    margin-left: 50vw;
+    margin-left: 27vw;
     z-index:1;
 }
 
@@ -126,12 +129,12 @@ header {
 }
 
 .title {
-    font-size: 6vw;
+    font-size: 10vw;
     font-weight: black;
-    margin-left: -30vw;
+    margin-left: 4vw;
     margin-top:-68vh;
     color:#f6a226; 
-    line-height: 12vh;
+    line-height: 8vh;
 }
 
 
@@ -180,7 +183,7 @@ header {
 }
 
 .photo-pages{
-    width: 75%;
+    width: 100%;
     z-index:4;
 }
 
@@ -200,7 +203,7 @@ header {
 }
 
 .ceramics{
-    padding-top: 2vh;
+    padding-top: 0vh;
     width: 100%;
 }
 
@@ -216,7 +219,7 @@ html {
 
 
 .random{
-    width: 50%;
+    width: 0%;
     height: 100vh;
     display:flex;
     justify-content: center;
@@ -233,7 +236,7 @@ html {
     color: #922b1f;
     position: absolute;
     margin-top: -35vh;
-    margin-left: -6vw;
+    margin-left: -50vw;
     border: 1px solid;
     padding:7px;
 }
@@ -241,14 +244,14 @@ html {
 .about-pic2{
     height:40vh;
     margin-top: 7vh;
-    margin-left: 7vw;
+    margin-left: 0vw;
     position:absolute;
     z-index: 1;
 }
 
 .vine2{
     height:130vh;
-    margin-left: 15vw;
+    margin-left: 0vw;
     margin-top: 5vh;
     position:absolute;
     z-index:-1;
@@ -267,6 +270,7 @@ html {
     margin-top: -85vh;
     margin-left: 45vw;
     z-index: 2;
+    opacity: 0;
 }
 
 .resume2{
@@ -282,6 +286,7 @@ html {
     margin-top: 30vh;
     margin-left: 18vw;
     z-index: 1;
+    opacity: 0;
 }
 
 
@@ -303,6 +308,9 @@ color: #922b1f;
 
 
 
+
+    
+}
 
 
 

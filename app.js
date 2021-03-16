@@ -7,19 +7,7 @@ function splitScroll(){
         triggerHook: 0
     })
     .setPin('.random')/*.addIndicators()*/.addTo(controller);
-/**************
-    new ScrollMagic.Scene({
-      //    AARON——using percents is already responsive, but it was set to the wrong value; 1000% to 500%
-        duration: '500%',
-        triggerElement: '.about-title',
-        triggerHook: 0
-        //offset: '100vh'
-    })
-    .setPin('.about-title').addIndicators().addTo(controller);
-/**************/
 
-/**************/
-/**************/
 /**************/
     $('.title').each(function () {
       // Create a scene for each project
@@ -59,6 +47,11 @@ $('.navigation1').each(function () {
 
 }
 splitScroll();
+
+
+
+
+
 
 
 
