@@ -1,6 +1,13 @@
 @media screen and (max-width: 770px) {
 
+html{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
 
+.scrollmagic-pin-spacer {
+    max-width:100vw;
+}
 
 body{
     font-family: 'Montserrat', sans-serif; 
@@ -59,9 +66,9 @@ header {
     font-weight: 300;
     font-size: 1.25em;
     color: #922b1f;
-    margin-top: 15vh;
+    margin-top: 800vh;
     margin-left: 6vw;
-    opacity: 0;
+    
     z-index: -1;
 }
 
