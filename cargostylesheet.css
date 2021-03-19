@@ -55,7 +55,7 @@ header {
     font-weight: 300;
     font-size: 1.25em;
     color: #922b1f;
-    margin-top: 15vh;
+    margin-top: 13vh;
     margin-left: 6vw;
     
     z-index: -1;
@@ -63,8 +63,8 @@ header {
 
 .about-pic{
     height:25vh;
-    margin-top:0vh;
-    margin-left: 30vw;
+    margin-top:-11vh;
+    margin-left: 33vw;
 }
 
 .vine{
